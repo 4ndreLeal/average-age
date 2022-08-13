@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+function pulaLinha(){
+	document.write("<br>");
+}
+
+function mostra(mensagem){
+	document.write(mensagem);
+	pulaLinha();
+}
+
+var limite = parseInt(prompt("Quantos familiares você tem? ")); // limite do loop
+var familiar = 1; // início do loop
+var somaIdades = 0;
+
+while(familiar <= limite){
+	var idade = parseInt(prompt("Informe idade do familiar: "));
+	familiar++; // incrementa até chegar ao limite
+	somaIdades += idade; // atribuição das idades, familiar a familiar, em uma variável soma
+}
+
+var mediaIdades = somaIdades/limite;
+
+mostra(mediaIdades);
+
+</script>
